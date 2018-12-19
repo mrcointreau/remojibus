@@ -51,6 +51,10 @@ export default {
     },
     onAfterLeave() {
       this.inputHasLeft = true
+
+      this.$confetti.start({
+        shape: 'rect'
+      })
     }
   },
 

@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
 
+import VueConfetti from 'vue-confetti'
+Vue.use(VueConfetti)
+
 import store from './store'
 
 Vue.config.productionTip = false
