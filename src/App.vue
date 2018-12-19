@@ -23,10 +23,6 @@ body {
   padding: 0;
 }
 
-#app {
-  font-family: Helvetica, Arial, sans-serif;
-}
-
 .centered {
   align-items: center;
   display: flex;

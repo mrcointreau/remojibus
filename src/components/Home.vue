@@ -1,12 +1,12 @@
 <template>
   <div>
-    <p class="font-scaled">{{ current.rebus }}</p>
+    <p v-html="current.rebusImg" class="width-responsive"></p>
     <transition name="scale" @after-leave="onAfterLeave">
       <input
         v-show="input.toLowerCase() !== current.solution"
         v-model="input"
         autofocus
-        class="centered font-scaled"
+        class="centered width-responsive"
         type="text"
         :disabled="input === current.solution"
       >
@@ -14,16 +14,18 @@
     <transition name="scale" @after-enter="onAfterEnter">
       <input
         v-show="inputHasLeft"
-        class="centered font-scaled"
+        class="centered width-responsive"
         style="border-color: white; border-style: solid;"
         type="text"
-        value="Esatto ✌️"
+        value="Esatto"
       >
     </transition>
   </div>
 </template>
 
 <script>
+import { default as twemoji } from 'twemoji'
+
 import { mapState } from 'vuex'
 
 const RELOADING_TIME = 3000
@@ -54,19 +56,31 @@ export default {
 
   created() {
     this.current = this.remojibus[Math.floor(Math.random() * this.remojibus.length)]
+
+    this.current.rebusImg = twemoji.parse(this.current.rebus, {
+      callback: (icon, options) => {
+        return require(`@/assets/${options.size}/${icon}${options.ext}`)
+      },
+      folder: 'svg',
+      ext: '.svg'
+    })
   }
 }
 </script>
 
+<style>
+img.emoji {
+  cursor: pointer;
+  height: 1em;
+  width: 1em;
+  margin: 0 0.05em 0 0.1em;
+  vertical-align: -0.1em;
+}
+</style>
+
 <style scoped>
 .centered {
   text-align: center;
-}
-
-.font-scaled {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: calc(20px + (100 - 20) * ((100vw - 300px) / (1600 - 300)));
-  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
 }
 
 .scale-enter-active,
@@ -88,6 +102,11 @@ export default {
 
 .scale-leave-to {
   transform: scaleX(0);
+}
+
+.width-responsive {
+  font-size: calc(20px + (100 - 20) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px) / (1600 - 300)));
 }
 </style>
 
