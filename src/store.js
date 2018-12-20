@@ -8,9 +8,11 @@ export default new Vuex.Store({
   state: {
     difficulty: 'easy',
     difficulties: ['easy', 'normal', 'hard'],
+    rebus: null,
     remojibus: require('@/assets/remojibus.json')
   },
   mutations: {
-    updateDifficulty: (state, difficulty) => (state.difficulty = difficulty)
+    updateDifficulty: (state, difficulty) => (state.difficulty = difficulty),
+    updateRebus: (state, rebus) => (state.rebus = rebus)
   }
 })

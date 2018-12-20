@@ -12,6 +12,7 @@
     "twemoji": "^11.2.0",
     "vue": "^2.5.17",
     "vue-confetti": "^0.4.2",
+    "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
   },
   "devDependencies": {
