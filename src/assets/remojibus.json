@@ -1,15 +1,15 @@
 [
-  { "rebus": "⚰️ 🌊", "solution": "baraonda", "difficulty": "easy" },
-  { "rebus": "🐷 🌲", "solution": "porcospino", "difficulty": "easy" },
-  { "rebus": "🏃‍ 😠 ⏳", "solution": "corsa contro il tempo", "difficulty": "normal" },
-  { "rebus": "🕛 🔥", "solution": "mezzogiorno di fuoco", "difficulty": "easy" },
-  { "rebus": "🏆 👴", "solution": "coppa del nonno", "difficulty": "easy" },
-  { "rebus": "👨‍💼 💍 💍", "solution": "il signore degli anelli", "difficulty": "easy" },
-  { "rebus": "🦶 🐷", "solution": "piede di porco", "difficulty": "easy" },
-  { "rebus": "⏺ 🎩", "solution": "registro di classe", "difficulty": "hard" },
-  { "rebus": "👽 🇮🇹", "solution": "alienazione", "difficulty": "hard" },
-  { "rebus": "⬆️ ❎ ⬇", "solution": "su per giù", "difficulty": "normal" },
-  { "rebus": "🏹 🐳", "solution": "arcobaleno", "difficulty": "easy" },
-  { "rebus": "⚰️ 🐀", "solution": "baratto", "difficulty": "easy" },
-  { "rebus": "😴 🚫 🐠 🐠", "solution": "chi dorme non piglia pesci", "difficulty": "normal" }
+  { "emojis": "⚰️ 🌊", "solution": "baraonda", "difficulty": 1 },
+  { "emojis": "🐷 🌲", "solution": "porcospino", "difficulty": 1 },
+  { "emojis": "🏃‍ 😠 ⏳", "solution": "corsa contro il tempo", "difficulty": 2 },
+  { "emojis": "🕛 🔥", "solution": "mezzogiorno di fuoco", "difficulty": 1 },
+  { "emojis": "🏆 👴", "solution": "coppa del nonno", "difficulty": 1 },
+  { "emojis": "👨‍💼 💍 💍", "solution": "il signore degli anelli", "difficulty": 1 },
+  { "emojis": "🦶 🐷", "solution": "piede di porco", "difficulty": 1 },
+  { "emojis": "⏺ 🎩", "solution": "registro di classe", "difficulty": 3 },
+  { "emojis": "👽 🇮🇹", "solution": "alienazione", "difficulty": 3 },
+  { "emojis": "⬆️ ❎ ⬇", "solution": "su per giù", "difficulty": 2 },
+  { "emojis": "🏹 🐳", "solution": "arcobaleno", "difficulty": 1 },
+  { "emojis": "⚰️ 🐀", "solution": "baratto", "difficulty": 1 },
+  { "emojis": "😴 🚫 🐠 🐠", "solution": "chi dorme non piglia pesci", "difficulty": 2 }
 ]
