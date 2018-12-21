@@ -1,12 +1,19 @@
 <template>
   <div id="app" class="full-height full-width">
+    <top-bar class="full-width top-bar" style="position: fixed;"/>
     <router-view/>
   </div>
 </template>
 
 <script>
+import TopBar from '@/components/TopBar.vue'
+
 export default {
-  name: 'app'
+  name: 'app',
+
+  components: {
+    TopBar
+  }
 }
 </script>
 
@@ -37,6 +44,7 @@ input[type='text'] {
 
 #app {
   font-family: Acme;
+  height: 100%;
 }
 
 .flex {
@@ -97,6 +105,12 @@ input[type='text'] {
 
 .text-right {
   text-align: right;
+}
+
+.top-bar {
+  background-color: #000;
+  box-shadow: 0 0 1em 0 grey;
+  color: #fff;
 }
 
 .responsive-width {

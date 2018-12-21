@@ -1,6 +1,5 @@
 <template>
   <div class="flex flex-column flex-align-items-center flex-justify-content-center full-height">
-    <button type="button" @click="$router.go(-1)">Indietro</button>
     <rebus :data="rebus" class="responsive-width"/>
     <transition name="scale" @after-leave="onAfterLeave">
       <input

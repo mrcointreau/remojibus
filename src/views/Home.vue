@@ -72,6 +72,10 @@ export default {
 </script>
 
 <style scoped>
+ul li:first-child {
+  margin-top: 10vw;
+}
+
 li {
   border: 1px solid lightgray;
 }
